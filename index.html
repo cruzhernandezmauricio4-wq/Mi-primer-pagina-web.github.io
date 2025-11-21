@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasteleria: Muffin</title>
 </head>
-<body>
+<body style="background-color: azure;font-family:Georgia, 'Times New Roman', Times, serif;">
     <header> <!--Esta es una etiqueta semantica de cabecera-->
         <nav><!--Barra de navegación-->
             <ul> <!--lista desordenada-->
-                <li> <a href=""> Nosotros </a></li>
-                <li><a href=""> Promociones </a></li>
-                <li><a href=""> Menu </a></li>
-                <li><a href=""> Contacto </a></li>
+                <!--enlace interno-->
+                <li> <a href="#nosotros"> Nosotros </a></li>
+                <li><a href="#promociones"> Promociones </a></li>
+                <li><a href="#menu"> Menu </a></li>
+                <li><a href="#contacto"> Contacto </a></li>
+                <li><a href="#recetas"> Recetas </a></li>
             </ul>
         </nav>
     </header>
     <!--informacion principal de mi pagina-->
     <main>
         <!--sección sobre nosotros-->
-        <article> 
-            <h1>CAFETERIA MOFFINS</h1>
+        <article id="nosotros"> 
+            <h1 style="color:black; font-size: 56px;text-align: center;">CAFETERIA MOFFINS</h1>
             <p> Nuestra pasion por la reposteria nos ha inspirado hornear mejor pan, 
                 crear pasteles únicos, servir el mejor cafe del mundo y estar a tu servicio siempre </p>
 
@@ -30,8 +32,8 @@
 
      <!--sección sobre promociones-->
 
-        <seccion> 
-            <h2>Promociones</h2>
+        <seccion id="promociones"> 
+            <h2 style="color:black">Promociones</h2>
             <ul>
                 <li><strong>2x1</strong> en muffins los lunes y miercoles</li>
                 <li><strong>Combo super muffin:</strong> llevate un cafe y un muffin por 60 pesos</li>
@@ -42,24 +44,24 @@
         </seccion>
         <!--sección sobre Menu-->
 
-        <seccion> 
+        <seccion id="menu"> 
 
             <h2>Menu</h2>
             <!--Tarjeta de postres-->
             <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_3hYmfps-bXwAIhnFX6NHotLvyt30GkY2hQumlsNk3hzNobaF5d1v4PYSeMnnrieaB4TUAKjEvxFqGJvD6NHXOU7xzB8GsBVYFD2ARaXd&s=10" alt="Imagen de un pay de límon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_3hYmfps-bXwAIhnFX6NHotLvyt30GkY2hQumlsNk3hzNobaF5d1v4PYSeMnnrieaB4TUAKjEvxFqGJvD6NHXOU7xzB8GsBVYFD2ARaXd&s=10" alt="Imagen de un pay de límon" width="400">
                 <h3>Pay de límon</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam possimus impedit repellat rem similiqu</p>
                 <p><strong>$280 </strong></p>
-                <button> Agregar </button>
+                <button style="border-radius: 8px;background-color: black;color: aliceblue;"> Agregar </button>
             </div>
 
             <div>
-                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/98ded26a9057ed7aab182ccb6e3c038b.webp?itok=XEBjJ4z3" alt="Imposible">
+                <img src="https://www.recetasnestle.com.mx/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/98ded26a9057ed7aab182ccb6e3c038b.webp?itok=XEBjJ4z3" alt="Imposible" width="400">
                 <h3>Pstel imposible</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam possimus impedit repellat rem similiqu</p>
                 <p><strong>$300 </strong></p>
-                <button> Agregar </button>
+                <button style="border-radius: 8px;background-color: black;color: aliceblue;"> Agregar </button>
             </div>
 
             
@@ -67,7 +69,7 @@
 
 
         <!--sección sobre contacto-->
-        <seccion> 
+        <seccion id="recetas"> 
             <h2>Receta de la abuela</h2>
             <h3>Muffin de zanahoria</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit 
@@ -88,7 +90,7 @@
     </main>
     <!--Esta da un pie de pagina -->
     <footer>
-        <section>
+        <section id="contacto">
             <h2>Contacto</h2>
             <p> Visitanos en nuestra sucursal....</p>
 
@@ -126,12 +128,12 @@
                 <label for="">Imagen de referencia</label>
                 <input type="file"name="" id="">
 
-                <button type="Submit">Enviar pedido</button>
+                <button type="Submit"style="border-radius: 8px;background-color: black;color: aliceblue;">Enviar pedido</button>
             </form>
         </section>
         <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
+            <li><a href="https://www.facebook.com/fiestapasteleria/?locale=es_LA" target="_blank" >Facebook</a></li>
+            <li><a href="https://www.instagram.com/niveldelicia/?hl=es" target="_blank" >Instagram</a></li>
             <li><a href="https://www.tiktok.com/@christiansolorzanosol/video/7358969527775939845?is_from_webapp=1&sender_device=pc&web_id=7574251706499024396" target="_blank" >TikTok</a></li>
             <li><a href="https://www.youtube.com/watch?v=PWTA1HB6aAw" target="_blank" >YouTube</a></li>
         </ul>
